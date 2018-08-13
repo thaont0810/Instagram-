@@ -17,16 +17,19 @@ $(document).ready(function () {
     $('.popup').removeClass('show-popup');
   });
 
-  // popup setting acc 
-  // $('.acc__setting__btn').click(function () {
-  //   $('.popup').addClass('show-popup');
-  // });
+  
 
   // slider story
   $('.slickCenter').slick({
     // centerMode: true,
     slidesToShow: 7,
-    infinite: false
+    infinite: false,
+    responsive: [{
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 4,
+      }
+    }]
 
   });
 
@@ -48,4 +51,23 @@ $(document).ready(function () {
     $('.popup').addClass('show-popup');
     return false;
   });
+
+
+  // setting menu
+  $('.acc__setting').click(function () {
+    $('.setting').addClass('show');
+  });
+  $('.setting__cancel').click(function () {
+    $('.setting').removeClass('show');
+  });
+
+  // popup photo
+  $('.post__link').click(function () {
+    $('.photo').addClass('show');
+    return false;
+  });
+
+  $('body').click(function(){
+    $('.photo').removeClass('show');
+});
 });

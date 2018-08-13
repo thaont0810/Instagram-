@@ -16,7 +16,7 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="container header-flex">
       <h1 class="header__title">
         <a href="index.html" class="header__link">
           <!-- <i class="fa fa-instagram" aria-hidden="true"></i> Instagram -->
@@ -514,29 +514,75 @@
     </div>
   </main>
 
-  <!-- popup setting -->
-  <div class="popup">
-    <div class="popup-content">
-      <ul class="popup__list">
-        <li class="popup__item">
-          <a class="popup__link" href="">Change Password</a>
-        </li>
-        <li class="popup__item">
-          <a class="popup__link" href="">Authorized Apps</a>
-        </li>
-        <li class="popup__item">
-          <a class="popup__link" href="">Notifications</a>
-        </li>
-        <li class="popup__item">
-          <a class="popup__link" href="">Privacy and Security</a>
-        </li>
-        <li class="popup__item">
-          <a class="popup__link" href="">Log Out</a>
-        </li>
-        <li class="popup__item popup__item--cancel">
-          <a class="popup__link" href="">Cancel</a>
-        </li>
-      </ul>
+  <!-- popup show photo -->
+  <div class="photo">
+    <div class="photo-content">
+      <img class="photo__img" src="img/photo/10.jpg" alt="">
+      <div class="photo__body">
+      </div>
+    </div>
+  </div>
+
+  <!-- setting -->
+  <div class="setting profile">
+    <div class="container edit">
+      <div class="setting__header">
+        <!-- <span class="setting__cancel">X</span> -->
+        <i class="setting__cancel fa fa-times" aria-hidden="true"></i>
+        <div class="setting__title">Options</div>
+      </div>
+      <div class="setting__body">
+        <ul class="setting__list">
+          <li class="setting__item">
+            <div class="setting__item__title active">Account</div>
+            <ul class="setting__item__content">
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Edit Profile</a>
+              </li>
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Change Password</a>
+              </li>
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Privacy and Security</a>
+              </li>
+            </ul>
+          </li>
+          <li class="setting__item">
+            <div class="setting__item__title">Settings</div>
+            <ul class="setting__item__content">
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Language</a>
+              </li>
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Authorized Apps</a>
+              </li>
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Notifications</a>
+              </li>
+            </ul>
+          </li>
+          <li class="setting__item">
+            <div class="setting__item__title">About</div>
+            <ul class="setting__item__content">
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Ads</a>
+              </li>
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Help Center</a>
+              </li>
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">Report a Problem</a>
+              </li>
+              <li class="setting__item__child">
+                <a class="setting__item__link" href="edit-profile.html">More</a>
+              </li>
+            </ul>
+          </li>
+          <li class="setting__item">
+            <div class="setting__item__title">Log Out</div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
